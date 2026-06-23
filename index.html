@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>PDA Assessment</title>
+    <meta name="description" content="Plataforma PDA Assessment.">
+    
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1046/1046261.png" type="image/x-icon">
+
+    <style>
+        /* Remove margens e barras de rolagem da página 'casca' */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* Impede rolagem dupla */
+            background-color: #f3f6f9;
+        }
+
+        /* O Iframe ocupa a tela toda */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <iframe 
+        src="https://script.google.com/macros/s/AKfycbyL2kx3-gv8Oxdg72SqsXIW6Nza4bDt9uKjOwh0IysL/exec?acao=pda"
+        allow="microphone *; camera *; geolocation *; autoplay *; speaker-selection *;" 
+        sandbox="allow-forms allow-modals allow-popups allow-scripts allow-same-origin allow-top-navigation-by-user-activation allow-downloads"
+        title="PDA Assessment">
+    </iframe>
+</body>
+</html>
